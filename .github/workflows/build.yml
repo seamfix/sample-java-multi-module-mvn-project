@@ -36,4 +36,4 @@ jobs:
         #run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=seamfix_sample-java-multi-module-mvn-project_1
         run: |
           cd report-aggregate-module
-          maven clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=seamfix_sample-java-multi-module-mvn-project_1
+          mvn clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=seamfix_sample-java-multi-module-mvn-project_1
