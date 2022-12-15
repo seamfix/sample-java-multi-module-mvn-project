@@ -37,7 +37,6 @@ jobs:
         run: |
           mvn -X clean org.jacoco:jacoco-maven-plugin:prepare-agent install org.jacoco:jacoco-maven-plugin:report -Dsonar.projectKey=seamfix_sample-java-multi-module-mvn-project_1
           mvn -X sonar:sonar -Dsonar.coverage.jacoco.xmlReportPaths=$(find "$(pwd)" -path '*jacoco.xml' | sed 's/.*/&/' | tr '\n' ',') -Dsonar.projectKey=seamfix_sample-java-multi-module-mvn-project_1
-          
         # run: |
           # cd report-aggregate-module
           # mvn clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=seamfix_sample-java-multi-module-mvn-project_1
